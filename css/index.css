@@ -106,7 +106,6 @@ section {
 }
 body {
   line-height: 1;
-  background-color: blue;
 }
 ol,
 ul {
@@ -134,4 +133,5 @@ table {
 html,
 body {
   height: 100%;
+  /*background-color: red; changed this to red as per instructions and then quickly changed it back. Ow, my eyes!*/
 }
