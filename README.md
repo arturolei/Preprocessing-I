@@ -45,4 +45,13 @@ Follow these steps for completing your project.
 * [ ] Create a link to the portfolio page and create a layout that would allow users to see your work.  A good idea is to link projects back to their github repos so employers can see your code.
 
 
+## Reflections on this Project:
 
+### Breakthroughs:
+- I really am liking `rem` units and thinking in terms of percentages and trying to avoid `px`
+- Preprocessors really make life easier, but also they can make life more complex (e.g. going too far deep when you're nesting), and I can understand why people think.
+
+### Challenges:
+- I lost time trying to figure out how to make tables responsive; I could have just built a table like structure from scratch I think and it might have saved me time or used flex maybe. 
+- I should really use more variables and take advantage of how I can use variables for code-reuse (mixins were added artificially); I really need to not jump in impetuously and really spend 30 or so minutes planning.
+- I had trouble using storing media queries as variables. I asked around and found a solution, but I should probably check the documentation.
