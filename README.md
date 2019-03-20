@@ -47,9 +47,13 @@ Follow these steps for completing your project.
 
 ## Reflections on this Project:
 
+## Project Link:
+[https://github.com/arturolei/Preprocessing-I/pull/1](https://github.com/arturolei/Preprocessing-I/pull/1)
+
 ### Breakthroughs:
 - I really am liking `rem` units and thinking in terms of percentages and trying to avoid `px`
-- Preprocessors really make life easier, but also they can make life more complex (e.g. going too far deep when you're nesting), and I can understand why people think.
+- Preprocessors really make life easier, but also they can make life more complex (e.g. going too far deep when you're nesting), and I can understand why people think that it can be a double-edge sword.
+- I've begun to anticipate why people create separate colors. 
 
 ### Challenges:
 - I lost time trying to figure out how to make tables responsive; I could have just built a table like structure from scratch I think and it might have saved me time or used flex maybe. 
