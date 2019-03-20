@@ -136,13 +136,14 @@ body {
   /*background-color: red; changed this to red as per instructions and then quickly changed it back. Ow, my eyes!*/
 }
 /*VARIABLES*/
-/* Mobile: Using @phone mixin to work for mobile */
+/* Mobile: Using @phone variable to work for mobile */
 /*COLORS: here are the colors*/
 /*Font-Stacks:*/
 /*Mixins*/
 html {
   font-family: 'Libre Baskerville', serif;
   font-size: 62.5%;
+  background-color: #FAEBD7;
 }
 .container {
   max-width: 1024px;
@@ -152,13 +153,18 @@ html {
   padding: 0 2%;
   /*CSS for the top section with an image*/
 }
+@media (max-width:500px) {
+  .container {
+    padding: 0;
+  }
+}
 .container header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container header {
     display: flex;
     flex-direction: column;
@@ -171,7 +177,7 @@ html {
   justify-content: space-between;
   width: 46%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container header nav {
     display: flex;
     flex-direction: column;
@@ -184,12 +190,12 @@ html {
   margin: 5% 2%;
   text-align: center;
   text-decoration: none;
+  color: darkred;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container header nav a {
     width: 100%;
-    border: 2px solid gray;
-    background-color: pink;
+    border: 0.5px solid gray;
     padding-top: 3%;
     padding-bottom: 3%;
     font-size: 1.8rem;
@@ -199,7 +205,7 @@ html {
 }
 .container .top-section {
   width: 100%;
-  background-color: lightgray;
+  background-color: #FEF9EB;
   padding-top: 4%;
   padding-left: 3%;
   padding-right: 3%;
@@ -210,7 +216,7 @@ html {
   align-items: flex-start;
   margin-bottom: 3%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .top-section {
     flex-direction: column;
     justify-content: flex-start;
@@ -225,7 +231,12 @@ html {
   flex-direction: column;
   justify-content: flex-start;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
+  .container .top-section .sherlock_blurb {
+    width: 100%;
+  }
+}
+@media (max-width:580px) {
   .container .top-section .sherlock_blurb {
     width: 100%;
   }
@@ -237,7 +248,7 @@ html {
   text-decoration: underline;
   color: darkred;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .top-section .sherlock_blurb h1 {
     margin: 5% auto;
     font-size: 4rem;
@@ -251,7 +262,7 @@ html {
   font-size: 1.6rem;
   margin: 4% auto;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .top-section .sherlock_blurb p {
     font-size: 1.4rem;
     margin: 4% auto;
@@ -263,11 +274,21 @@ html {
   padding: 5%;
   text-align: center;
   font-size: 2rem;
+  color: darkred;
+  background-color: #FAEBD7;
+  border: 2px solid black;
+  border-radius: 50px;
 }
 .container .top-section img {
   margin: 5%;
+  border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
+  .container .top-section img {
+    display: none;
+  }
+}
+@media (max-width:580px) {
   .container .top-section img {
     display: none;
   }
@@ -279,9 +300,8 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid gray;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .mid-section {
     display: flex;
     flex-direction: column;
@@ -303,7 +323,7 @@ html {
 .container .mid-section div p {
   line-height: 1.5;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .mid-section div {
     width: 100%;
     padding: 5%;
@@ -319,31 +339,74 @@ html {
   border-collapse: collapse;
 }
 .container .work-history {
-  margin: 3% 0;
+  margin: 6% 0;
   width: 100%;
-  border-bottom: 1px solid gray;
 }
 .container .work-history h2 {
   color: darkred;
   font-size: 2rem;
   width: 100%;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 .container .work-history table {
   width: 100%;
   margin: 3% 0;
   font-size: 1.5rem;
+  border-collapse: separate;
 }
 .container .work-history table thead {
   color: darkred;
   text-align: left;
 }
+.container .work-history table thead th {
+  width: 30%;
+  padding: 2% 0;
+}
+.container .work-history table thead th:nth-child(1) {
+  width: 10%;
+  padding-left: 2%;
+}
 .container .work-history table tbody {
   text-align: left;
   padding: 2%;
 }
+.container .work-history table tbody tr:nth-child(odd) {
+  background-color: #FEF9EB;
+}
+.container .work-history table tbody tr td {
+  /*border:1px solid red;*/
+  font-size: 1.4rem;
+  padding: 2% 0;
+  padding-right: 1%;
+  width: 30%;
+}
+.container .work-history table tbody tr td:first-child {
+  padding-left: 2%;
+  width: 10%;
+  font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .container .work-history table tbody tr td:first-child {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-left: 0%;
+  }
+}
+@media (max-width:500px) {
+  .container .work-history table tbody tr td {
+    font-size: 1.4rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 1%;
+  }
+}
 .container .contact {
   margin: 3% 0;
+}
+@media (max-width:500px) {
+  .container .contact {
+    margin: 11% 0;
+  }
 }
 .container .contact h2 {
   color: darkred;
@@ -351,16 +414,16 @@ html {
   width: 100%;
   margin-bottom: 2%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .contact h2 {
-    maring-bottom: 4%;
+    margin-bottom: 4%;
   }
 }
 .container .contact address {
   line-height: 1.5;
   width: 45%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .container .contact address {
     font-size: 1.8rem;
     width: 100%;
@@ -369,11 +432,16 @@ html {
 .container footer {
   background-color: gray;
   width: 100%;
-  margin-top: 3%;
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 2%;
+}
+@media (max-width:500px) {
+  .container footer {
+    margin-top: 6%;
+  }
 }
 .container footer p {
   text-align: center;
