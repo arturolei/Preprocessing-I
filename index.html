@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>The Resume of Sherlock Holmes</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,85 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Past Cases</a>
+          <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="top-section">
+      <img src="css/images/sherlock_portrait.jpg" alt="Sherlock Holmes by Sidney Paget">
+      <div class="sherlock_blurb">
+          <h1>Sherlock Holmes</h1>
+          <h2>The Original World's Greatest Detective</h2>
+          <p>I'm the original consulting detective and world-renown expert beekeeper. I've worked for Scotland Yard and for various governments on the Continent!</p>
+          <button>The Game is Afoot!</button>
+      </div>
+    
+    </section>
+    <section class="mid-section">
+      <div>
+        <h2>Here's the Gist...</h2>
+        <p> I am the world's greatest detective. My clients have included royalty and illustrious businessmen. I'm also a published author. I've written several monographs on criminology and on beekeeping. When it comes to detective work, I even wrote the book, "The Whole Art of Deduction"! Don't take my word for it! You can even read the accounts of the good Dr. John H. Watson!</p>
+      </div>
+      <div>
+        <h2>Stuff I'm Good At:</h2>
+        <ul>
+          <li>Deductive and Inductive Reasoning</li>
+          <li>Criminology </li>
+          <li>Chemical Analysis</li>
+          <li>Theatrics and disguise!</li>
+          <li>Beekeeping!</li>
+        </ul>
+      </div>
+    </section>
+    <section class="work-history">
+      <h2>Work History</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Yrs</th>
+                  <th>Clients</th>
+                  <th>Title</th>
+                  <th>Skills Used</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>3</td>
+                <td>Cambridge Undergraduates</td>
+                <td>Undergraduate Researcher in Chem Lab</td>
+                <td>Chemical analysis, Forensic Anthropology</td>
+              </tr>
+              <tr>
+                <td>25+</td>
+                <td>The British People and British Government and Misc. European Nobility</td>
+                <td>Consulting Detective</td>
+                <td>Scientific Deduction, Chemical Analysis, Psychology</td>
+              </tr>
+              <tr>
+                <td>100</td>
+                <td>Random busybodies</td>
+                <td>Head Beekeeper</td>
+                <td>Beekeeping</td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <address>
+        221b Baker St, Marylebone, <br>
+        London NW1 6XE, United Kingdom
+      </address>
+    </section>
+    <footer>
+      <p class="copyright">Copyright Awesomeness 2019</p>
+    </footer>
+  </div>
+  
 </body>
 </html>
